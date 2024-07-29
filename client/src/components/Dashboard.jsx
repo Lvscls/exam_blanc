@@ -32,7 +32,7 @@ const AdminDashboard = () => {
     };
 
     fetchClientCount();
-  }, []);
+  });
 
   useEffect(() => {
     const fetchCars = async () => {
