@@ -1,0 +1,97 @@
+.update-vehicle-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-vehicle-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .update-vehicle-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-vehicle-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .update-vehicle-container label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .update-vehicle-container input,
+  .update-vehicle-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .update-vehicle-container input:focus,
+  .update-vehicle-container select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2);
+  }
+  
+  .update-vehicle-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+  }
+  
+  .update-vehicle-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .update-vehicle-container button:active {
+    background-color: #004080;
+  }
+  
+  .update-vehicle-container .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+  }
+  
+  .update-vehicle-container .delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.02);
+  }
+  
+  .update-vehicle-container .delete-button:active {
+    background-color: #a71d2a;
+  }
+  
+  .update-vehicle-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  

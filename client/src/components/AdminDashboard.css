@@ -1,0 +1,71 @@
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.admin-dashboard h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000; /* Changed to black */
+}
+
+.admin-dashboard p {
+  font-size: 1.2rem;
+  color: #000; /* Changed to black */
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  width: 100%;
+  max-width: 800px;
+  overflow-x: auto;
+}
+h3{
+  color: #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead {
+  background-color: #333;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  color: #000; 
+}
+
+.dashboard-footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #eee;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000; 
+}
