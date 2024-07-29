@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 const cors = require("cors");
 const path = require("path");
 const cookieParser = require("cookie-parser");
+const helmet = require("helmet");
 
 const app = express();
 const port = 3000;
@@ -15,7 +16,23 @@ const corsOptions = {
   credentials: true,
   optionsSuccessStatus: 204,
 };
-// Middleware
+app.use(helmet()); 
+
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://trusted-scripts.example.com"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", "data:", "https://trusted-images.example.com"],
+      connectSrc: ["'self'", "https://trusted-api.example.com"],
+      fontSrc: ["'self'", "https://fonts.example.com"],
+      objectSrc: ["'none'"],
+      frameSrc: ["'none'"],
+      upgradeInsecureRequests: [],
+    },
+  })
+);
 
 app.use(bodyParser.json());
 app.use(cookieParser());
